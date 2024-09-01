@@ -69,7 +69,7 @@ class AES:
         print("How many rounds of AES cryptography do you want to perform?\n>", end = '')
         self.round_amount = int(input())
 
-        print("TYpe the number that specifies what mode of operation you want to perform:\n")
+        print("Type the number that specifies what mode of operation you want to perform:\n")
         print("1 - Pure AES")
         print("2 - CTR mode")
         self.mode_of_operation = int(input())
@@ -128,13 +128,6 @@ class AES:
 
 
     def DoCTRAES(self):
-        
-        # encrypted_message = self.CTREncrypt(len(self.input_message))
-        # # print(type(encrypted_message[0][0]))
-        # # print(encrypted_message)
-
-        # decrypted_message = self.CTRDecrypt(len(self.input_message), encrypted_message)
-        # print(decrypted_message)
 
         self.encrypted_file = 'AES_CTR_Encrypted.txt'
         self.decrypted_file = 'AES_CTR_Decrypted.txt'
@@ -483,5 +476,4 @@ class AES:
 
         return n
 
-# y = AES(0x2b7e151628aed2a6abf7158809cf4f3c)
 y = AES("abcdefghijklmnop")
